@@ -1,0 +1,19 @@
+# _config.yml
+title: "JaMo Design"
+description: "online work"
+baseurl: ""  # Esto es importante para las rutas
+url: "https://jamodesign.nl"  # Tu dominio
+permalink: pretty
+
+# Configuración para SPA (Single Page Application)
+include:
+  - .htaccess
+
+# Opcional: Excluir archivos de procesamiento
+exclude:
+  - node_modules
+  - vendor
+
+# Habilitar plugins si los necesitas
+plugins:
+  - jekyll-sitemap

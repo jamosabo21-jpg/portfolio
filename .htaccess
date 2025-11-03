@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Si no es un archivo existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las rutas al index.html principal
+RewriteRule ^(.*)$ /index.html [L,QSA]
