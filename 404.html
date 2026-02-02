@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        // Guardar la ruta actual y redirigir
+        const path = window.location.pathname + window.location.search + window.location.hash;
+        if (path !== '/404.html') {
+            sessionStorage.setItem('redirect', path);
+        }
+        window.location.href = '/';
+    </script>
+</head>
+<body>
+    <noscript>
+        <h1>Redirigiendo...</h1>
+        <p>Si no eres redirigido automáticamente, <a href="/">haz clic aquí</a>.</p>
+    </noscript>
+</body>
+</html>

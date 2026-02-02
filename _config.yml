@@ -1,0 +1,13 @@
+title: Portafolio
+description: Projects
+theme: jekyll-theme-cayman
+permalink: pretty
+include: [".htaccess", "404.html"]
+
+# Configuración para SPA
+plugins:
+  - jekyll-redirect-from
+
+# Configuración de build
+build:
+  output: public
